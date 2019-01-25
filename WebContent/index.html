@@ -5,8 +5,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome to HDB Dev ops !!!</h1>
-<h5> Date 25 Jan 2018</h5>
-<input type="button" name="inputbtn" value="Changed Me" />
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+</script>
 </body>
 </html>
